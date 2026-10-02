@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="km"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#ff93c2"><title>POPPIG - Pop the Pig, Battle Countries</title>
+<meta name="description" content="POPPIG - Click the pig. Climb the leaderboard. Battle other countries. Free online clicking game.">
+<meta property="og:title" content="POPPIG - Pop the pig, battle countries"><meta property="og:description" content="Click the pig. Climb the leaderboard. Battle other countries.">
+<meta property="og:type" content="website"><meta name="robots" content="index,follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%B7%3C/text%3E%3C/svg%3E">
+
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;font-family:system-ui,sans-serif;-webkit-tap-highlight-color:transparent;overflow:hidden;
+ background:radial-gradient(ellipse at 50% 22%,#ffc2dc 0,#ff93c2 50%,#f2679f 100%);color:#5a1237}
+body:before{content:"";position:fixed;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.14) 0 2px,transparent 2px 9px);pointer-events:none}
+#w{position:relative;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:20px;text-align:center}
+h1{margin:0;font-family:"Bowlby One","Arial Black",system-ui,sans-serif;font-weight:900;font-size:44px;letter-spacing:3px;color:#fff;text-shadow:3px 4px 0 rgba(160,20,90,.55)}
+#play{width:200px;height:200px;border-radius:50%;border:15px solid rgba(14,60,95,.28);background-clip:padding-box;will-change:transform;cursor:pointer;
+ background:radial-gradient(circle at 30% 25%,#5fd0ff 0,#1e9bea 45%,#0369a1 100%);
+ box-shadow:0 14px 34px rgba(3,70,120,.45),inset 0 -8px 18px rgba(0,40,80,.35);
+ font-family:"Bowlby One","Arial Black",system-ui,sans-serif;font-size:46px;color:#032a47;letter-spacing:2px;animation:pulse 2s ease-in-out infinite;transition:transform .1s}
+#play:active{transform:scale(.94)}
+@keyframes pulse{50%{transform:scale(1.04)}}
+.hero{height:26vh;max-width:70vw;object-fit:contain;filter:drop-shadow(0 10px 14px rgba(120,40,70,.4));animation:bob 1.4s ease-in-out infinite alternate}
+@keyframes bob{to{transform:translateY(-12px) rotate(3deg)}}
+small{position:fixed;bottom:12px;left:0;right:0;text-align:center;color:#7a1a4a;opacity:.7;font-size:13px}
+p{margin:0;max-width:330px;font-size:20px;line-height:1.35;color:#7a1a4a;opacity:.9}
+</style></head><body><div id="w">
+<img class="hero" src="pig1.png" alt="Pop Pig"><h1>POPPIG</h1>
+<button id="play" onclick="location.href='game.html'">PLAY</button>
+<p>Click the pig. Climb the leaderboard. Battle other countries.</p>
+</div></body></html>
